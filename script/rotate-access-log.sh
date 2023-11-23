@@ -1,9 +1,11 @@
+## このファイルをrootディレクトリに配置する
+
 #!/bin/bash
 
 DIR="access_logs"
 
 if [ ! -e $DIR ]; then
-  mkdir $DIR
+  sudo mkdir $DIR
 fi
 
 cd $(dirname $0)/../

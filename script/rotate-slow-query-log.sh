@@ -1,11 +1,11 @@
-## 以下コードをrootディレクトリに配置する
+## このファイルをrootディレクトリに配置する
 
 #!/bin/bash
 
 DIR="slow-query_logs"
 
 if [ ! -e $DIR ]; then
-  mkdir $DIR
+  sudo mkdir $DIR
 fi
 
 cd $(dirname $0)/../
