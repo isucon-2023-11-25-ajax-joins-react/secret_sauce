@@ -11,7 +11,7 @@ $ sudo su root
 $ ssh-keygen -t rsa
 ```
 
-作成したid_rsa.pubな中身をdeploy_keyとして登録します。
+作成したid_rsa.pubの中身をdeploy_keyとして登録します。
 
 <img src="images/deploy_key.png" alt="デプロイキーの画像" title="デプロイキー" width="700px">
 
