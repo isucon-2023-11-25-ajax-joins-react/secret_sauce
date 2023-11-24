@@ -6,10 +6,10 @@ REMOTE_HOST=$2
 
 # SSHを使用してリモートマシン上でコマンドを実行する
 ssh -i "${SSH_KEY_PATH}" ubuntu@"${REMOTE_HOST}" << 'EOF'
-cd ../isucon || exit
+cd ~/
 # mainブランチにチェックアウトし、pullする
-sudo -u isucon git checkout main
-sudo -u isucon git pull
+sudo -u root git checkout main
+sudo -u root git pull
 # webappサービスの再起動
 sudo systemctl disable --now isucondition.ruby.service
 sudo systemctl enable --now isucondition.ruby.service
