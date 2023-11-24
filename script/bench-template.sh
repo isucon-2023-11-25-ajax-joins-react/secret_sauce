@@ -12,4 +12,4 @@ sudo mkdir -p $DIR
 cd /home/isucon/bench
 
 # 以下のbenchコマンドの記述は本番時はいい感じに書き換える
-./bench -all-addresses 127.0.0.11 -target 127.0.0.11:443 -tls -jia-service-url http://127.0.0.1:4999 > ${DIR}/bench_output_$(date +"%Y%m%d_%H%M").txt
+./bench -all-addresses 127.0.0.11 -target 127.0.0.11:443 -tls -jia-service-url http://127.0.0.1:4999 | sudo tee /${DIR}/bench_output_$(date +"%Y%m%d_%H%M").txt
